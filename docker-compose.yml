@@ -9,7 +9,11 @@ services:
     environment:
       EULA: "TRUE"
       TZ: "Asia/Shanghai"
-      SERVER_NAME: "最新原版"
+      MEMORY: "1G"
+      MOTD: "minecraft base 1.19.4"
+      DIFFICULTY: "hard"
+      MAX_PLAYERS: 5
+      ANNOUNCE_PLAYER_ACHIEVEMENTS: "true"
     tty: true
     stdin_open: true
     restart: unless-stopped
@@ -27,7 +31,11 @@ services:
       TYPE: "FTBA"
       MEMORY: "5G"
       FTB_MODPACK_ID: 103
-      SERVER_NAME: "FTB Skies"
+      FTB_MODPACK_VERSION_ID: 6458
+      MOTD: "FTB Skies"
+      DIFFICULTY: "hard"
+      MAX_PLAYERS: 5
+      ANNOUNCE_PLAYER_ACHIEVEMENTS: "true"
     tty: true
     stdin_open: true
     restart: unless-stopped
