@@ -12,7 +12,7 @@ services:
     stdin_open: true
     restart: unless-stopped
     volumes:
-      - ./minecraft:/data/world
+      - ./minecraft:/data
 
   ftb-skies:
     image: itzg/minecraft-server:java17
