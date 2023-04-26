@@ -7,7 +7,7 @@ services:
     ports:
       - "25565:25565"
     environment:
-      EULA: TRUE
+      EULA: "TRUE"
     tty: true
     stdin_open: true
     restart: unless-stopped
@@ -20,9 +20,9 @@ services:
     ports:
       - "25566:25565"
     environment:
-      EULA: TRUE
-      TYPE: FTBA
-      MEMORY: 5G
+      EULA: "TRUE"
+      TYPE: "FTBA"
+      MEMORY: "5G"
       FTB_MODPACK_ID: 103
     tty: true
     stdin_open: true
