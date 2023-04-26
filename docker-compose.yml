@@ -36,7 +36,7 @@ services:
       DIFFICULTY: "hard"
       MAX_PLAYERS: 5
       ANNOUNCE_PLAYER_ACHIEVEMENTS: "true"
-      ALLOW_FLIGHT: "TRUE"
+      ONLINE_MODE: "FALSE"
     tty: true
     stdin_open: true
     restart: unless-stopped
